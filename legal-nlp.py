@@ -84,7 +84,7 @@ class gui :
     def openfile(self) :
 
 
-        filepath = filedialog.askopenfilename ( initialdir = "C://users/krai/Downloads" ,
+        filepath = filedialog.askopenfilename ( initialdir = "/" ,
                                                          filetypes=[('text files', 'txt')],
 
                                                          )
