@@ -88,7 +88,7 @@ class gui :
                                                          filetypes=[('text files', 'txt')],
 
                                                          )
-        # Add Dekaname to box list
+        
         deka_name = (Path ( filepath ).stem)
         self.listbox.insert(END,deka_name)
 
@@ -98,14 +98,13 @@ class gui :
         self.preview.insert(END, self.f.read ( ) )
 
 
-        #Keep string data to list and w8 to use
+        
         with open( filepath , "r" , encoding = "utf-8" ) as str_data :
             data = str_data.read()
             text.append(data)
 
 
-        #test for show data
-        #self.show_data(list = None, text = text)
+    
 
     def show_data (self,list ,text) :
 
